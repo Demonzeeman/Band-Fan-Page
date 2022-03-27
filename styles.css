@@ -57,7 +57,7 @@ body {
   /* background-image: url("images/Background3.jpg"); */ 
   background-blend-mode: multiply;
   background-size: cover;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 
@@ -76,8 +76,8 @@ body {
 }
 
 .content-section {
-  margin: 1em;
-}
+  margin: 1em 1em 3em 1em;
+  }
 
 .container {
   max-width: 900px;
@@ -104,7 +104,9 @@ body {
 .main-footer {
   background-color: rgb(0, 0, 0);
   color: white;
-  padding: 0.25em 0;
+  padding: 30px 0 30px 0;
+  
+  /* padding: 0.25em 0; */
 }
 
 .main-footer-container {
@@ -345,5 +347,5 @@ body {
 
 .footer-bottom {
   text-align: center;
-  margin: 0;
+  margin-bottom: 0
 }
