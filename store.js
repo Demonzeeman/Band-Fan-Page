@@ -3,7 +3,7 @@ if (document.readyState == "loading") {
 } else {
   ready();
 }
-//this first part is incredibly important
+//NB
 
 function ready() {
   var removeCartItemButtons = document.getElementsByClassName("btn-danger"); //return all the element's that have the class 'btn-danger
@@ -94,7 +94,7 @@ function addItemToCart(title, price, imageSrc) {
   );
   cartRow
     .getElementsByClassName("cart-quantity-input")[0]
-    .addEventListener("change", quantityChanged); // this allows the quantity adjustment to change the total
+    .addEventListener("change", quantityChanged); // this allows the quantity adjustment to change the total, kept breaking changes
 }
 
 function updateCartTotal() {
@@ -109,7 +109,7 @@ function updateCartTotal() {
     var quantityElement = cartRow.getElementsByClassName(
       "cart-quantity-input"
     )[0];
-    //currently we have the element and not the information inside of it
+    //currently  have the element and not the information inside of it
     var price = parseFloat(priceElement.innerText.replace("$", "")); //grabs the number using innerText and replaces dollar sign with nothing
     //parseFloat turns any string into a float which is a number with decimal points
     var quantity = quantityElement.value;
